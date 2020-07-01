@@ -225,8 +225,8 @@ li span{
 .cardContent p {
     line-height: 30px;
     text-align: center;
-    color: ##FF7F50;
-    opacity: 0.6
+    color: #FF7F50;
+    opacity: 0.6;
 }
 
 .cardContent .cardBtn {
