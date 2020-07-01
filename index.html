@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <title>Title Page</title>
 
-    </head>
-    <body>
-        <header>
-            <!-- nav isinya logo dan menu -->
-            <nav>
-                <div class="logo"><h1>LOGO</h1></div>
-                <div class="menu">
-                    <ul>
-                        <li>Daftar Kursus</li>
-                        <li>Tim Pengajar</li>
-                        <li>Testimoni</li>
-                        <li>Hubungi Kami</li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- cover isinya banner dan tombol daftar sekarang -->
-            <div class="cover"></div>
-        </header>
-        <main>
-            <!-- artikel 1 isinya mungkin bisa daftar kursus yang ditawarkan beserta pricenya -->
-            <article class="artikel1"></article>
-            <!-- artikel 2 isinya mungkin bisa komentar dari alumni e-learning -->
-            <article class="artikel2"><p>tes</p></article>
-        </main>
-        <!-- footer copy right  -->
-        <footer></footer>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Title Page</title>
+
+</head>
+
+<body>
+  <div class="container-nav">
+    <nav>
+      <div class="logo">
+        <h1>CEB12 School Online</h1>
+      </div>
+
+      <div class="logo">
+        <span class="fa fa-bars menu-icon"></span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#Mentor">Mentor</a></li>
+          <li><a href="#">Course List</a></li>
+          <li><a href="#">Testimoni</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- awal banner -->
+  <section id="Banner">
+    <div class="container-banner">
+      <p>Study and Grup Discussion with <br>International Standard</p>
+      <button class="btn-register">register now</button>
+    </div>
+  </section>
+  <!-- akhir banner -->
+
+
+  <!-- awal mentor -->
+  <section id="Mentor" class="Mentor">
+    <div class="heading">Mentor</div>
+    <div class="container-mentor">
+      <div class="card-wrapper">
+        <div class="card">
+          <img src="image/Gambar4.jpg" alt="" class="profile-img">
+          <h1>Michael horse</h1>
+          <p class="job-title">Data engineer</p>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <img src="image/Gambar4.jpg" alt="" class="profile-img">
+          <h1>Michael horse</h1>
+          <p class="job-title">Data engineer</p>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card">
+          <img src="image/Gambar4.jpg" alt="" class="profile-img">
+          <h1>Michael horse</h1>
+          <p class="job-title">Data engineer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir mentor -->
+
+  <!-- awal course list -->
+  <section id="course-list">
+    <h1 class="heading">Course List</h1>
+    <div class="container-course">
+      <div class="path">
+        <h3>Learnig Path Paling Populer</h3>
+        <p>Berikut merupakan learning path yang paling banyak digemari dari course online ini</p>
+      </div>
+
+      <div class="list">
+        <div class="card-list">
+          <div class="card">
+            <h3>Python with matplotlib</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer copy right  -->
+
+  <section id="footer" class="footer">
+    <div class="container-footer">
+      <footer class="content">
+        <div class="footer-contact">
+          <div class="label-contact">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-globe"></span>
+            <span class="fa fa-home"></span>
+          </div>
+        </div>
+      </footer>
+
+      <footer class="bottom">
+        copyrigth &copy CEB12_School_Online.com | Designed By ...
+      </footer>
+    </div>
+  </section>
+</body>
+
 </html>
