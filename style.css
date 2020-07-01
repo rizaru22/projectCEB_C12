@@ -13,15 +13,21 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth;
 }
+
 nav{
     width: 100%;
     height: 70px;
-    position: fixed;
+    position: sticky;
     background-color: aqua;
     top: 0;
-    z-index: 5;
 }
 .menu li{
     list-style-type: none;
@@ -42,13 +48,307 @@ nav .logo{
     height: 400px;
 }
 
-.artikel1{
-    height: 400px;
+/*.artikel1{
+    height: 300px;
     background-color:seagreen;
+}*/
+
+/* Landing Page */
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    height: 90vh;
+    background-color: #fff;
+}
+
+.landingText h1 {
+    font-size: 5vw;
+    margin: 0 !important;
+}
+
+.landingText h5 {
+    margin: 6px !important;
+    font-size: 20px;
+    opacity: 0.3;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.landingText .btn {
+    width: 120px;
+    margin-top: 30px;
+    padding: 14px 20px 14px 20px;
+    background-color: #33a9ed;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.landingText .btn a {
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+.landingImage img {
+    width: 40vw;
+}
+
+/*About CSS*/
+.about{
+    height: 600px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.aboutText{
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+}
+.aboutText h1{
+    position: relative;
+    left: 110px;
+}
+.aboutText img{
+    width: 20vw;
+    position: absolute;
+    top: 20px;
+}
+.aboutList{
+    width: 50%;
+}
+ol{
+    list-style: none;
+    color: #e0501b;
+}
+ol li{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+li p{
+    font-size: 16px;
+    color: #000;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+li span{
+    position: absolute;
+    line-height: 25px;
+    font-size: 600;
+}
+
+
+/* Section Card */
+.infoSection {
+    height: 800px;
+    background-color: #fff;
+
+}
+
+.infoHeader {
+    color: #33a9ed;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 2vw;
+}
+
+.infoCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infoCards h1 {
+    color: #33a9ed;
+}
+
+.infoCards .card {
+    position: relative;
+    height: 480px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infoCards .one .cardoneImg {
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.infoCards .two .cardtwoImg {
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.infoCards .three .cardthreeImg {
+    width: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.cardbgone {
+    height: 150px;
+    background-color: #6bc6ff;
+}
+
+.cardbgtwo {
+    height: 150px;
+    background-color: #0092e7;
+}
+
+.cardContent {
+    padding: 40px 40px;
+}
+
+.cardContent h2 {
+    margin-top: 110px;
+    font-weight: 600;
+    color: #e0501b;
+    text-align: center;
+}
+
+.cardContent p {
+    line-height: 30px;
+    text-align: center;
+    color: ##FF7F50;
+    opacity: 0.6
+}
+
+.cardContent .cardBtn {
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    width: 25px;
+    height: 20px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.cardContent .cardBtn:hover {
+    background-color: #33dfed;
+}
+
+.cardContent .cardBtn .cardIcon {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+}
+
+/* Team Section */
+.team-section {
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.inner-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    color: #333;
+    overflow: hidden;
+}
+
+.team-section h1 {
+    color: #33a9ed;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.profil {
+    float: left;
+    width: calc(100% / 2);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+}
+
+.profil:hover {
+    background: #ddd;
+}
+
+.profil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profill {
+    float: left;
+    margin-left: 300px;
+    width: calc(100% / 2);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+    position: relative;
+}
+
+.profill:hover {
+    background: #ddd;
+}
+
+.profill img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.p-nama {
+    margin: 16px 0;
+    padding: 0 6px;
+    color: #3498db;
+    font-size: 18px
+}
+
+.p-noReg {
+    font-style: italic;
+}
+
+.p-sm {
+    margin-top: 12px;
+}
+
+.p-sm a {
+    margin: 0 4px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+}
+
+.p-sm a:hover {
+    transform: scale(1.3);
+}
+
+.p-sm a i {
+    color: #333;
+    line-height: 30px;
 }
 
 .artikel2{
-    height: 300px;
+    height: 350px;
     padding-top: 20px;
     background-color: rosybrown;
     color: red;
@@ -58,4 +358,3 @@ footer{
     height: 50px;
     background-color: yellow;
 }
-

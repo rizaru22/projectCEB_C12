@@ -1,0 +1,221 @@
+/*Responsive*/
+@media screen and (max-width: 1024px) {
+
+    /*Landing Page*/
+    .landing {
+        flex-direction: row;
+        height: 700px;
+        /* align-items: center; */
+        /* justify-content: left; */
+        /* text-align: center; */
+    }
+
+    .landingText h1 {
+        font-size: 5vw;
+        margin: 0 !important;
+    }
+
+    .landingText h3 {
+        font-size: 20px;
+    }
+
+    .landingText .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .landingText .btn a {
+        font-size: 2vw;
+    }
+
+    .landingImage img {
+        width: 32vw;
+        margin-bottom: 20px;
+        padding-left: 80px;
+    }
+
+    /* Info Section */
+    .infoSection {
+        height: auto;
+
+    }
+
+    .infoHeader {
+        padding-top: 60px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .infoCards {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoCards .card {
+        margin-bottom: 60px;
+        width: 600px;
+        height: 600px;
+    }
+
+    .infoCards .one .cardoneImg,
+    .infoCards .two .cardtwoImg,
+    .infoCards .three .cardthreeImg {
+        height: 300px;
+        width: 600px;
+    }
+
+    .cardbgone,
+    .cardbgtwo {
+        height: 300px;
+    }
+
+    .bannerText h1 {
+        font-size: 4vw;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .bannerInnerText {
+        font-size: 2.2vw;
+    }
+
+    .bannerText img {
+        width: 18vw;
+        margin-right: 20px;
+    }
+
+    .bannerImg img {
+        width: 20vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== Mobile ========== */
+
+@media screen and (max-width: 756px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    nav h4 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+
+    nav .links a {
+        margin-right: 25px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /*Landing Page*/
+    .landing {
+        flex-direction: column-reverse;
+        height: 750px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .landingText h1 {
+        font-size: 8vw;
+        margin: 0 !important;
+    }
+
+    .landingText h3 {
+        font-size: 16px;
+    }
+
+    .landingText .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        float: none;
+    }
+
+    .landingText .btn a {
+        font-size: 3vw;
+    }
+
+    .landingImage img {
+        width: 36vw;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+
+    /* Info Section */
+    .infoSection {
+        height: auto;
+    }
+
+    .infoHeader {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .infoCards {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoCards .card {
+        margin-bottom: 60px;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+    .banner {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 4vw;
+    }
+
+    .bannerInnerText {
+        font-size: 2.5vw !important;
+    }
+
+    .bannerText img {
+        width: 20vw;
+    }
+
+    .bannerImg img {
+        padding-top: 40px;
+        width: 20vw;
+    }
+
+    .footer {
+        align-items: center;
+        padding-bottom: 40px;
+    }
+}
