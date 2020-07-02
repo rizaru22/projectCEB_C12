@@ -8,7 +8,6 @@
        	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
 		rel="stylesheet">
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css">
 
@@ -32,7 +31,12 @@
         </header>
         <main>
           <!-- cover isinya banner dan tombol daftar sekarang -->
-          <div class="cover"></div>
+          <div class="cover" data-aos="fade-up" data-aos-duration="2000">
+			  <div class="container">
+			  <h1>Learn Anytime Anywhere</h1>
+			  <button class="btn_sign_up"><span>Sign Up Now     </span></button>
+			</div>
+		  </div>
             	
 		<!--Landing Page-->
 	<div class="landing" id="home">
@@ -77,17 +81,6 @@
 			</ol>
 		</div>
 	</div>
-
-	
-				
-	
-		<main>
-			
-
-				
-
-				
-
 				<!-- Section Card -->
 				<div class="infoSection" id="destination">
 					<div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
@@ -220,8 +213,13 @@
                             <div class="judul-support">
                                 <h2>Support</h2>
                             </div>
-                            <h5>Help</h5>
-                            <h5>FAQ</h5>
+                            <div class="icon">
+								<i class="fa fa-info-circle"></i><a href="#"><h5>Help</h5></a>
+								</div>
+								<div class="icon">
+									<i class="fa fa-question-circle"></i>
+									<a href="#"><h5>FAQ</h5></a>
+								</div>
                         </div>
     
                         <div class="footer-contact">
@@ -229,16 +227,16 @@
                                 <h2>Contact Us</h2>
                             </div>
                             <div class="icon">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <h5>facebook</h5>
+                                <i class="fab fa-facebook-f"></i>
+                                <a href="#"><h5>Facebook</h5></a>
                             </div>
                             <div class="icon">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <h5>git-hub</h5>
+                                <i class="fab fa-github"></i>
+                                <a href="#"><h5>Git Hub</h5></a>
                             </div>
                             <div class="icon">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <h5>Instagram</h5>
+                                <i class="fab fa-instagram"></i>
+								<a href="#"> <h5>Instagram</h5></a>
                             </div>
                         </div>
                     </div>
@@ -252,8 +250,9 @@
                     Copryght &copy CEB12_School_Online.com | Designed By CEB12 Group
                 </p>
             </div>
-        </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script>
                 AOS.init();
         </script>

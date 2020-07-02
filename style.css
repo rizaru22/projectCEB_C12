@@ -77,6 +77,58 @@ body{
     /* border: 1px solid green; */
 }
 
+.container{
+    margin-top: 300px;
+    margin-left: 4%;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color:#fb9d36;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+
+.btn_sign_up{
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color:rgba(51,169,237,.8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+}
+
+.btn_sign_up span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_sign_up span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 25px;
+}
+
+.btn_sign_up:hover span{
+    padding-right: 25px;
+}
+.btn_sign_up:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
 
 
 
@@ -428,10 +480,14 @@ footer{
 .footer-support {
     padding-top: 10px;
     text-align: right;
+    margin-right: 10px;
 }
 .icon {
     display: flex;
     justify-content: space-between;
+    /* width: 100px;
+    display: block;
+    border: 1px solid red; */
 }
 .icon h5 {
     font-size: 14px;
@@ -441,6 +497,8 @@ footer{
 .icon a{
     color: black;
     padding-bottom: 10px;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 .judul-support {
