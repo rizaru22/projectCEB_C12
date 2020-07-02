@@ -22,25 +22,44 @@ body{
     scroll-behavior: smooth;
 }
 
-nav{
+.header {
     width: 100%;
-    height: 70px;
-    position: sticky;
-    background-color: aqua;
-    top: 0;
-}
-.menu li{
-    list-style-type: none;
-    display: inline;
-}
-nav .menu{
-    padding: 20px ;
-    float: right;
+    overflow: hidden;
+    background-color:rgba(241, 241, 241, 0.8);
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 5;
+    
 }
 
-nav .logo{
+.header a {
     float: left;
-    padding: 20px;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #f1f1f1;
+    color: #053EFF;
+}
+
+.header a.active {
+    background-color: #f1f1f1;
+    color: #053EFF;
+}
+
+.header-right {
+    float: right;
 }
 
 .cover{
@@ -57,13 +76,17 @@ nav .logo{
 .landing {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-evenly !important; */
     align-items: center;
     padding: 0 10vw;
-    height: 90vh;
+    height: 80vh;
     background-color: #fff;
+    border: 2px solid red;
 }
-
+.landingText{
+    
+    margin-right: 30px;
+}
 .landingText h1 {
     font-size: 5vw;
     margin: 0 !important;
@@ -78,7 +101,7 @@ nav .logo{
 }
 
 .landingText .btn {
-    width: 120px;
+    width: 130px;
     margin-top: 30px;
     padding: 14px 20px 14px 20px;
     background-color: #33a9ed;
@@ -93,16 +116,18 @@ nav .logo{
 
 .landingImage img {
     width: 40vw;
+    /* border: 2px solid red; */
 }
 
 /*About CSS*/
 .about{
-    height: 600px;
+    height: 500px;
     padding: 0px 50px;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
+    border: 2px solid yellow;
 }
 .aboutText{
     position: relative;
@@ -347,12 +372,7 @@ li span{
     line-height: 30px;
 }
 
-.artikel2{
-    height: 350px;
-    padding-top: 20px;
-    background-color: rosybrown;
-    color: red;
-}
+
 
 footer{
     height: 50px;

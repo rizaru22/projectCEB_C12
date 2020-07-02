@@ -12,29 +12,27 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css">
 
-        <title>Title Page</title>
+        <title>CEB12 School Online</title>
 
     </head>
     <body>
         <header>
             <!-- nav isinya logo dan menu -->
             <nav>
-                <div class="logo"><h1>LOGO</h1></div>
-                <div class="menu">
-                    <ul>
-                        <li>Daftar Kursus</li>
-                        <li>Tim Pengajar</li>
-                        <li>Testimoni</li>
-                        <li>Hubungi Kami</li>
-                    </ul>
+                <div class="header">
+                    <img src="img/logoheader.png" width="200" height="45">
+                    <div class="header-right">
+                        <a href="#">Home</a>
+                        <a class="active" href="#about">About</a>
+                        <a href="#course">Course</a>
+                        <a href="#team">Our Team</a>
+                    </div>
                 </div>
-            </nav>
-            <!-- cover isinya banner dan tombol daftar sekarang -->
-            <div class="cover"></div>
+               
         </header>
         <main>
-            <!-- artikel 1 isinya mungkin bisa daftar kursus yang ditawarkan beserta pricenya -->
-            <article class="artikel1">
+          <!-- cover isinya banner dan tombol daftar sekarang -->
+          <div class="cover"></div>
             	
 		<!--Landing Page-->
 	<div class="landing">
@@ -51,7 +49,7 @@
 	</div>
 
 	<!--About Section-->
-	<div class="about">
+	<div class="about" id="about">
 		<div class="abouText" data-aos="fade-left" data-aos-duration="1000">
 			<h1>Why you should <br><span style="color:#2f8be0;font-size:2vw;"> choose CEB12? </span></h1>
 			<img src="img/engineer.png">
@@ -81,7 +79,7 @@
 	</div>
 
 	<!-- Section Card -->
-	<div class="infoSection" id="destination">
+	<div class="infoSection" id="course">
 		<div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
 			<h1>Let's Find Out <br><span>Our Popular Courses</span></h1>
 		</div>
@@ -184,15 +182,13 @@
 	</div>
 
 
-            </article>
-            <!-- artikel 2 isinya mungkin bisa komentar dari alumni e-learning -->
-            <article class="artikel2"><p>tes</p></article>
+           
         </main>
         <!-- footer copy right  -->
         <footer></footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+        <script>
+                AOS.init();
+        </script>
     </body>
 </html>

@@ -3,8 +3,10 @@
 
     /*Landing Page*/
     .landing {
-        flex-direction: row;
-        height: 700px;
+        flex-direction: column;
+        height: 80vh;
+        padding-top: 20px;
+        
         /* align-items: center; */
         /* justify-content: left; */
         /* text-align: center; */
@@ -30,11 +32,15 @@
     }
 
     .landingImage img {
-        width: 32vw;
-        margin-bottom: 20px;
-        padding-left: 80px;
+        width: 80vw;
+        /* padding:20px; */
+        padding-top: 30px;
     }
-
+    
+    .about{
+        height: 100vh;
+        flex-direction: column;
+    }
     /* Info Section */
     .infoSection {
         height: auto;
