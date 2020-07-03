@@ -47,62 +47,7 @@
         margin-top: 50px;
     }
     /* Info Section */
-    .infoSection {
-        height: auto;
-
-    }
-
-    .infoHeader {
-        padding-top: 60px;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .infoCards {
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .infoCards .card {
-        margin-bottom: 60px;
-        width: 600px;
-        height: 600px;
-    }
-
-    .infoCards .one .cardoneImg,
-    .infoCards .two .cardtwoImg,
-    .infoCards .three .cardthreeImg {
-        height: 300px;
-        width: 600px;
-    }
-
-    .cardbgone,
-    .cardbgtwo {
-        height: 300px;
-    }
-
-    .bannerText h1 {
-        font-size: 4vw;
-        color: #fff;
-        font-weight: 600;
-    }
-
-    .bannerInnerText {
-        font-size: 2.2vw;
-    }
-
-    .bannerText img {
-        width: 18vw;
-        margin-right: 20px;
-    }
-
-    .bannerImg img {
-        width: 20vw;
-    }
+    
     
     .pers{
         display: flex;
@@ -207,28 +152,7 @@
     }
 
     /* Info Section */
-    .infoSection {
-        height: auto;
-        padding-top: 50px;
-    }
-
-    .infoHeader {
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .infoCards {
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .infoCards .card {
-        margin-bottom: 60px;
-    }
+    
 
     .profil {
         width: 100%;
