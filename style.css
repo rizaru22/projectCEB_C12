@@ -90,13 +90,13 @@ body{
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 30px;
-    color:#e0501b;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    color:#052282;
+    text-shadow: 1px 1px 2px rgba(41, 41, 41, 0.6);
 }
 
 .container h1 span{
     font-weight: 300;
-    color:#f8b49b;
+    color:#33a9ed;
 }
 
 .btn_sign_up{
@@ -183,6 +183,12 @@ body{
 .landingText .btn a {
     font-size: 1.2vw;
     color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.landingText .btn:hover{
+    background-color: #052282;
 }
 
 .landingImage img {
@@ -446,7 +452,8 @@ footer{
 .footer-support {
     padding-top: 10px;
     text-align: right;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    padding: 10px 20px 10px 20px;
 }
 .icon {
     display: flex;
@@ -481,7 +488,7 @@ footer{
 .copyright {
     height: 50px;
     line-height: 50px;
-    background-color: hsla(226, 93%, 26%, 0.7);
+    background-color: #052282;
     color: #fff;
     text-align: center;
     font-weight: normal;
