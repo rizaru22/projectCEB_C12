@@ -1,18 +1,29 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div{
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
     padding: 0;
     margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
-  }
-body{
+}
+
+body {
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     background-color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
@@ -26,12 +37,12 @@ body{
 .header {
     width: 100%;
     /* overflow: hidden; */
-    background-color:rgba(241, 241, 241, 0.8);
+    background-color: rgba(241, 241, 241, 0.8);
     padding: 10px 10px;
     position: fixed;
     z-index: 5;
-   
-    
+
+
 }
 
 .header a {
@@ -43,7 +54,7 @@ body{
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-    
+
 }
 
 .header .logo {
@@ -66,7 +77,7 @@ body{
     float: right;
 }
 
-.cover{
+.cover {
     /* background-color: burlywood; */
     /* margin-top: 50px; */
     background-image: url(img/3980908.jpg);
@@ -77,23 +88,24 @@ body{
     /* border: 1px solid green; */
 }
 
-.container{
+.container {
     margin-top: 300px;
     margin-left: 4%;
 }
-.container h1{
+
+.container h1 {
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 30px;
-    color:#fb9d36;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    color: #fb9d36;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
 }
 
 
-.btn_sign_up{
+.btn_sign_up {
     padding: 12px 24px;
     border-radius: 5px;
-    background-color:rgba(51,169,237,.8);
+    background-color: rgba(51, 169, 237, .8);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -102,17 +114,17 @@ body{
     width: 250px;
     transition: all 0.5s;
     cursor: pointer;
-  
+
 }
 
-.btn_sign_up span{
+.btn_sign_up span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.btn_sign_up span:after{
+.btn_sign_up span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -121,10 +133,11 @@ body{
     transition: 25px;
 }
 
-.btn_sign_up:hover span{
+.btn_sign_up:hover span {
     padding-right: 25px;
 }
-.btn_sign_up:hover span:after{
+
+.btn_sign_up:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -145,10 +158,12 @@ body{
     background-color: #fff;
     /* border: 2px solid red; */
 }
-.landingText{
-    
+
+.landingText {
+
     margin-right: 30px;
 }
+
 .landingText h1 {
     font-size: 5vw;
     margin: 0 !important;
@@ -182,52 +197,60 @@ body{
 }
 
 /*About CSS*/
-.about{
-    
+.about {
+
     height: 500px;
     padding: 0px 50px;
     display: flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items:center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     /* border: 2px solid yellow; */
 }
-.aboutText{
-    
+
+.aboutText {
+
     position: relative;
     padding: 0 50px;
     height: inherit;
 }
-.aboutText h1{
+
+.aboutText h1 {
     position: relative;
     left: 110px;
 }
-.aboutText img{
+
+.aboutText img {
     width: 20vw;
     position: absolute;
     top: 20px;
 }
-.aboutList{
+
+.aboutList {
     width: 50%;
 }
-ol{
+
+ol {
     list-style: none;
     color: #e0501b;
 }
-ol li{
+
+ol li {
     font-size: 34px;
     position: relative;
     margin-bottom: 20px;
     border-bottom: 1px solid #ebebeb;
 }
-li p{
+
+li p {
     font-size: 16px;
     color: #000;
     padding-left: 60px;
     line-height: 30px;
     opacity: 0.6;
 }
-li span{
+
+li span {
     position: absolute;
     line-height: 25px;
     font-size: 600;
@@ -439,7 +462,7 @@ li span{
 
 
 /* footer content */
-footer{
+footer {
     height: 150px;
     width: 80%;
     margin: 20px auto;
@@ -458,7 +481,8 @@ footer{
     margin-bottom: 15px;
 }
 
-.progate, .UGM {
+.progate,
+.UGM {
     height: 70px;
     margin-right: 20px;
     border-radius: 5px;
@@ -468,20 +492,16 @@ footer{
     padding-top: 10px;
 }
 
-.footer-contact .judul-contact{
+.footer-contact .judul-contact {
     padding-bottom: 10px;
     font-size: 12px;
 }
 
-.footer-contact a{
-    margin-right: 10px;
+.footer-support {
+    text-align: right;
+    padding: 10px 20px 10px 20px;
 }
 
-.footer-support {
-    padding-top: 10px;
-    text-align: right;
-    margin-right: 10px;
-}
 .icon {
     display: flex;
     justify-content: space-between;
@@ -489,12 +509,13 @@ footer{
     display: block;
     border: 1px solid red; */
 }
+
 .icon h5 {
     font-size: 14px;
     font-weight: normal;
 }
 
-.icon a{
+.icon a {
     color: black;
     padding-bottom: 10px;
     text-decoration: none;
@@ -506,7 +527,7 @@ footer{
     padding-bottom: 10px;
 }
 
-.footer-support h5{
+.footer-support h5 {
     font-size: 14px;
     font-weight: normal;
 }
@@ -515,8 +536,9 @@ footer{
 .copyright {
     height: 50px;
     line-height: 50px;
-    background-color: hsla(226, 93%, 26%, 0.7);
+    background-color: #052282;
     color: #fff;
     text-align: center;
     font-weight: normal;
+    font-size: 1vw;
 }
