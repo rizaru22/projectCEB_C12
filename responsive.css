@@ -251,8 +251,8 @@
         text-align: center;
         padding-bottom: 10px;
         border-radius: 6px;
-        box-shadow: 2px 5px 20px rgba(1,1,1,0.3)
-        box-shadow: 2px 5px 20px rgba(1, 1, 1, 0.3)
+        box-shadow: 2px 5px 20px rgba(1,1,1,0.3);
+       
     }
 
     .footer-contact h5 {
