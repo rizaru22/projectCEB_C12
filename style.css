@@ -66,15 +66,77 @@ body{
     float: right;
 }
 
+.menu-icon{
+    display: none;
+}
+
 .cover{
     /* background-color: burlywood; */
     /* margin-top: 50px; */
-    background-image: url(img/20670.jpg);
+    background-image: url(img/3980908.jpg);
     background-size: cover;
     overflow: hidden;
     width: 100%;
     height: 750px;
-    border: 1px solid green;
+    background-position: center center;
+    box-shadow: 0px 1px 20px rgba(41, 41, 41, 0.3);
+    /* border: 1px solid green; */
+}
+
+.container{
+    margin-top: 300px;
+    margin-left: 4%;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color:#052282;
+    text-shadow: 1px 1px 2px rgba(41, 41, 41, 0.6);
+}
+
+.container h1 span{
+    font-weight: 300;
+    color:#33a9ed;
+}
+
+.btn_sign_up{
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color:rgba(51,169,237,.8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+}
+
+.btn_sign_up span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_sign_up span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 25px;
+}
+
+.btn_sign_up:hover span{
+    padding-right: 25px;
+}
+.btn_sign_up:hover span:after{
+    opacity: 1;
+    right: 0;
 }
 
 
@@ -91,7 +153,7 @@ body{
     padding: 0 10vw;
     height: 80vh;
     background-color: #fff;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .landingText{
     
@@ -122,6 +184,12 @@ body{
 .landingText .btn a {
     font-size: 1.2vw;
     color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.landingText .btn:hover{
+    background-color: #052282;
 }
 
 .landingImage img {
@@ -138,7 +206,7 @@ body{
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 .aboutText{
     
@@ -183,113 +251,70 @@ li span{
 
 
 /* Section Card */
-.infoSection {
-    height: 800px;
-    background-color: #fff;
-
-}
-
-.infoHeader {
-    color: #33a9ed;
+.container-card{
+    width: 100%;
+    height : 600px;
+    background-color: white;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    font-size: 2vw;
+    margin-bottom: 50px;
+}
+.container-card h1{
+    margin: 20px 0;
+    color: #33a9ed;
 }
 
-.infoCards {
+.cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0 40px 0;
+    margin-bottom: 20px;
 }
 
-.infoCards h1 {
-    color: #33a9ed;
+.card{
+    width: 25%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 30px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.infoCards .card {
-    position: relative;
-    height: 480px;
-    width: 350px;
-    background: #fff;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+.card img{
+    width: 100%;
+    height:  auto;
+    margin-top: 10px 5px 20px 5px;
+    padding : 10px;
 }
-
-.infoCards .one .cardoneImg {
-    width: 350px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.infoCards .two .cardtwoImg {
-    width: 350px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.infoCards .three .cardthreeImg {
-    width: 350px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.cardbgone {
-    height: 150px;
-    background-color: #6bc6ff;
-}
-
-.cardbgtwo {
-    height: 150px;
-    background-color: #0092e7;
-}
-
-.cardContent {
-    padding: 40px 40px;
-}
-
-.cardContent h2 {
-    margin-top: 110px;
+.card h2{
+    margin-top: 30px;
     font-weight: 600;
     color: #e0501b;
-    text-align: center;
 }
 
-.cardContent p {
+.card h3{
     line-height: 30px;
     text-align: center;
-    color: #FF7F50;
+    color:#FF7F50;
     opacity: 0.6;
 }
 
-.cardContent .cardBtn {
-    position: absolute;
-    right: 20px;
-    padding: 10px;
-    background-color: #ededed;
-    width: 25px;
-    height: 20px;
-    border-radius: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all ease-in-out 0.2s;
+.card button{
+    height: 40px;
+    width: 40px;
+    border:0;
+    border-radius: 40px;
+    margin-top:10px;
+    margin-left: 80%;
+    font-weight: 300;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.cardContent .cardBtn:hover {
-    background-color: #33dfed;
+.card button:hover{
+    background-color:#33dfed;
 }
 
-.cardContent .cardBtn .cardIcon {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 16px;
-}
 
 /* Team Section */
 .team-section {
@@ -386,7 +411,86 @@ li span{
 
 
 
+/* footer content */
 footer{
+    height: 150px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.footer-content {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.judul-sponsor {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.progate, .UGM {
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.footer-contact {
+    padding-top: 10px;
+}
+
+.footer-contact .judul-contact{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer-contact a{
+    margin-right: 10px;
+}
+
+.footer-support {
+    padding-top: 10px;
+    text-align: right;
+    /* margin-right: 10px; */
+    padding: 10px 20px 10px 20px;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100px;
+    display: block;
+    border: 1px solid red; */
+}
+.icon h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.icon a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.judul-support {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.footer-support h5{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* footer copyright*/
+.copyright {
     height: 50px;
-    background-color: yellow;
+    line-height: 50px;
+    background-color: #052282;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
 }
